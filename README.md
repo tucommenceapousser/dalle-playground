@@ -9,7 +9,7 @@ A playground for text-to-image enthusiasts using [Stable Diffusion V2](https://s
 *<h3>November 2022, major update</h3>*
 The original version of this repository used [DALL-E Mini](https://github.com/borisdayma/dalle-mini). With the recent release of Stable Diffusion (SD) V2 and the ease of implementation - this repository has moved to use SD over DALL-E Mini.
 
-<br>_Also see [Whisper Playground](https://github.com/saharmor/whisper-playground) - a playground for building real-time speech2text web apps using OpenAI's Whisper_
+<br>_Also see [Whisper Playground](https://github.com/tucommenceapousser/whisper-playground) - a playground for building real-time speech2text web apps using OpenAI's Whisper_
 
 
 ![SD repo demo](https://user-images.githubusercontent.com/6180201/204181184-b257d832-d5f6-460d-8193-aaaf25214015.gif)
@@ -18,10 +18,10 @@ The original version of this repository used [DALL-E Mini](https://github.com/bo
 
 You can tinker with the DALL-E playground using a Github-hosted frontend. Follow these steps:
 
-1. Run the DALL-E backend using Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/saharmor/dalle-playground/blob/main/backend/dalle_playground_backend.ipynb)
+1. Run the DALL-E backend using Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tucommenceapousser/dalle-playground/blob/main/backend/dalle_playground_backend.ipynb)
 2. Copy the URL from the output of the last executed cell. Search for the line stating with `Your url is:`.
 3. **Wait for the backend to fully load**, this should take ~2min and you should see `--> Image generation server is up and running!`
-5. Browse https://saharmor.github.io/dalle-playground/?backendUrl=https://XXXX.trycloudflare.com where the `backendUrl` query parameter should be the url from the previous step
+5. Browse https://tucommenceapousser.github.io/dalle-playground/?backendUrl=https://XXXX.trycloudflare.com where the `backendUrl` query parameter should be the url from the previous step
 
 **General note**: while it is possible to run the backend on the free tier of Google Colab, generating more than ~2 images would take >1min, which will result in a frontend timeout. Consider upgrading to Colab Pro or run the backend notebook on your stronger ML machine (e.g. AWS EC2). 
 
@@ -52,7 +52,7 @@ Window's WSL2 Linux layer has some unique issues getting running with GPU suppor
 5. In compiling `jaxlib`, you might hit a broken configuration file, solution here: https://github.com/google/jax/issues/11068
 6. Follow local development instructions above
 
-WSL2 installs are fairly bare bones, expect to install packages like `npm`, `python3-pip` and many others to get things working. More troubleshooting [here](https://github.com/saharmor/dalle-playground/pull/44)
+WSL2 installs are fairly bare bones, expect to install packages like `npm`, `python3-pip` and many others to get things working. More troubleshooting [here](https://github.com/tucommenceapousser/dalle-playground/pull/44)
 
 ## Local development with Docker-compose
 
